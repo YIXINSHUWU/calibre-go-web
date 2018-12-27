@@ -1,18 +1,23 @@
 package main
 
 import (
+	"github.com/apt-getyou/calibre-go-web/app/http/middleware"
+	"github.com/apt-getyou/calibre-go-web/config"
+	"github.com/apt-getyou/calibre-go-web/routes"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
 func main() {
+	config.Bootstrap()
 	// 初始化引擎
-	route := gin.Default()
-
+	engine := gin.Default()
 	// 注册一个路由和处理函数
-	route.GET("/", WebRoot)
+	routes.BuildRoutes(engine)
+	engine.Use(middleware.RequestMiddleware())
+
 	// 绑定端口，然后启动应用
-	route.Run(":80")
+	engine.Run(config.HttpAddr + ":" + config.HttpPort)
 }
 
 /**
