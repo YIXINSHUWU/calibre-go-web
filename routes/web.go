@@ -5,6 +5,10 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func BuildRoutes(engine *gin.Engine) {
-	engine.GET("/", controllers.Home)
+type Web struct {
+
+}
+
+func (Web) BuildRoutes(engine *gin.Engine) {
+	engine.GET("/", controllers.HomeController{}.Home)
 }
