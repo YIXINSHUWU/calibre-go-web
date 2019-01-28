@@ -1,13 +1,30 @@
 package config
 
-var (
-	HttpAddr string
-	HttpPort string
-	Debug    string
+import (
+	"github.com/apt-getyou/gtf"
+	"github.com/gin-gonic/gin"
 )
 
-func initSettingValue() {
-	HttpAddr = Env("addr", "127.0.0.1")
-	HttpPort = Env("port", "8080")
-	Debug = Env("debug", "false")
+var (
+	HttpAddr = ""
+	HttpPort = "80"
+	Debug    = "debug"
+)
+
+type WebConfig struct {
+}
+
+func (WebConfig) initSettingValue() {
+	HttpAddr = Env("addr", HttpAddr)
+	HttpPort = Env("port", HttpPort)
+	Debug = Env("debug", Debug)
+}
+
+func (WebConfig) init(engine *gin.Engine) {
+	for k, v := range gtf.GtfFuncMap {
+		engine.FuncMap[k] = v
+	}
+
+	engine.LoadHTMLGlob("resources/view/*/*")
+	engine.Static("/static", "resources/static")
 }

@@ -5,7 +5,11 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func RequestMiddleware() gin.HandlerFunc {
+type VerifyCsrfToken struct {
+
+}
+
+func (VerifyCsrfToken) Handle() gin.HandlerFunc {
 	return func(ctx *gin.Context) {
 		fmt.Println("before request")
 		ctx.Next()

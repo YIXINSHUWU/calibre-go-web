@@ -8,17 +8,19 @@ import (
 	"os"
 )
 
+var web = []gin.HandlerFunc{
+	middleware.VerifyCsrfToken{}.Handle(),
+}
+
 func main() {
-	e := config.Bootstrap()
+	engine := gin.Default()
+
+	e := config.Bootstrap(engine)
 	if e != nil {
 		os.Exit(1)
 	}
 	// 初始化引擎
-	engine := gin.Default()
-
-	engine.Use(middleware.RequestMiddleware())
-
-	engine.Group("/")
+	engine.Group("/", web...)
 	{
 		routes.Web{}.BuildRoutes(engine)
 	}
