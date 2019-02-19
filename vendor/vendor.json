@@ -1,0 +1,73 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "4Sw0sOT5gXpaaZ+ZROVT2VPlMwY=",
+			"path": "github.com/apt-getyou/gtf",
+			"revision": "65ad004f9f57eff177341bfcde3f5a67a9e2c278",
+			"revisionTime": "2019-01-28T09:54:51Z"
+		},
+		{
+			"checksumSHA1": "BhMowD2DIKSd9qq8Pzh7Y3mh2/w=",
+			"path": "github.com/gin-contrib/sse",
+			"revision": "22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae",
+			"revisionTime": "2017-01-09T09:34:21Z"
+		},
+		{
+			"checksumSHA1": "LpSSt3nIapIeMVeMZFgHdmFf4dM=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": "f67d7a90c4d2e5bdf310a78d7e6a04e3d9aee851",
+			"revisionTime": "2018-12-13T03:20:17Z"
+		},
+		{
+			"checksumSHA1": "RRVnqQ0Wau8Axb93tWFsIyg2LWA=",
+			"path": "github.com/gin-gonic/gin/binding",
+			"revision": "f67d7a90c4d2e5bdf310a78d7e6a04e3d9aee851",
+			"revisionTime": "2018-12-13T03:20:17Z"
+		},
+		{
+			"checksumSHA1": "gEtlV34SWTL6eC3N9E5bT/4+FsY=",
+			"path": "github.com/gin-gonic/gin/internal/json",
+			"revision": "f67d7a90c4d2e5bdf310a78d7e6a04e3d9aee851",
+			"revisionTime": "2018-12-13T03:20:17Z"
+		},
+		{
+			"checksumSHA1": "TMfLOtBH10EzOsnRJlIYOG3N+DM=",
+			"path": "github.com/gin-gonic/gin/render",
+			"revision": "f67d7a90c4d2e5bdf310a78d7e6a04e3d9aee851",
+			"revisionTime": "2018-12-13T03:20:17Z"
+		},
+		{
+			"checksumSHA1": "Wp97rIwFg54dNwuCeR9Vslaehtw=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "1d3f30b51784bec5aad268e59fd3c2fc1c2fe73f",
+			"revisionTime": "2018-11-28T19:23:52Z"
+		},
+		{
+			"checksumSHA1": "LkbotKu3JQxXEZZ9P40yhnFOycY=",
+			"path": "github.com/mattn/go-isatty",
+			"revision": "3fb116b820352b7f0c281308a4d6250c22d94e27",
+			"revisionTime": "2018-08-30T10:17:45Z"
+		},
+		{
+			"checksumSHA1": "wZGvJfdhbzkKXwZTjneBk1+EOo4=",
+			"path": "github.com/ugorji/go/codec",
+			"revision": "772ced7fd4c2f6322c07537a9a93b68d74551fa6",
+			"revisionTime": "2018-12-09T15:14:46Z"
+		},
+		{
+			"checksumSHA1": "q190bL03wQok3wVwYmMub2XhOiU=",
+			"path": "gopkg.in/go-playground/validator.v8",
+			"revision": "5f1438d3fca68893a817e4a66806cea46a9e4ebf",
+			"revisionTime": "2017-07-30T05:02:35Z"
+		},
+		{
+			"checksumSHA1": "oNqPrS2edE8peI3ah2INe379k8E=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "51d6538a90f86fe93ac480b35f37b2be17fef232",
+			"revisionTime": "2018-11-15T11:05:04Z"
+		}
+	],
+	"rootPath": "github.com/apt-getyou/calibre-go-web"
+}

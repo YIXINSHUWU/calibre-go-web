@@ -6,7 +6,6 @@ import (
 )
 
 type Web struct {
-
 }
 
 func (Web) BuildRoutes(engine *gin.Engine) {
