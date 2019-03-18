@@ -1,11 +1,12 @@
 package main
 
 import (
+	"os"
+
 	"github.com/apt-getyou/calibre-go-web/app/http/middleware"
 	"github.com/apt-getyou/calibre-go-web/config"
 	"github.com/apt-getyou/calibre-go-web/routes"
 	"github.com/gin-gonic/gin"
-	"os"
 )
 
 var web = []gin.HandlerFunc{

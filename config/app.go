@@ -3,11 +3,12 @@ package config
 import (
 	"bufio"
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"io"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/gin-gonic/gin"
 )
 
 var envValue map[string]string
