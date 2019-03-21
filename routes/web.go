@@ -10,4 +10,5 @@ type Web struct {
 
 func (Web) BuildRoutes(engine *gin.Engine) {
 	engine.GET("/", controllers.HomeController{}.Home)
+	engine.GET("login" , controllers.HomeController{}.Login)
 }
